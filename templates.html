@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Templates — Kondwani P</title>
+    <meta name="description" content="Browse 10 diverse landing page templates. Toggle between preview and description for each template." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="page-templates">
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="index.html"><span class="logo-frame" aria-hidden="true">KP</span>Kondwani<span>P</span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a class="active" href="templates.html">Templates</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="btn btn-primary" href="contact.html">Start a Project</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-content">
+          <h1 class="headline">10 ready‑to‑launch templates.</h1>
+          <p class="subhead">Each template blends a sleek dark aesthetic with strong section structure, bold CTAs, and conversion‑driven copy cues. Toggle preview ↔ description to see how it fits your offer.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary btn-lg" href="contact.html">Customize a template</a>
+            <a class="btn btn-ghost btn-lg" href="services.html">See packages</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbs">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <header class="section-header">
+          <h2>Template Gallery</h2>
+          <p>Click “View description” on any template to read the strategy behind the layout and who it’s best for. Click again to return to the live‑style preview.</p>
+        </header>
+
+        <div class="grid grid-2 templates-grid" id="templatesGrid">
+          <!-- Template cards: preview <-> description toggle -->
+          <!-- Each card has a unique data-template id -->
+          <article class="template-card card card-hover" data-template="ignite">
+            <a class="preview" href="Templates/ignite/landing.html" aria-label="Open Ignite landing">
+              <img src="" data-generate="ignite-png" alt="Ignite template preview" width="1200" height="700" loading="lazy" decoding="async" />
+            </a>
+            <div class="description" hidden>
+              <h3>Ignite</h3>
+              <p>High‑impact hero, social proof stripe, features, pricing, and FAQ. Built to launch offers quickly and convert cold traffic.</p>
+              <p>Best for solopreneurs, service promos, and product drops.</p>
+            </div>
+            <div class="template-actions">
+              <button class="btn btn-primary" data-action="toggle">View description</button>
+              <a class="btn btn-ghost" href="Templates/ignite/landing.html">Open</a>
+            </div>
+          </article>
+
+          <article class="template-card card card-hover" data-template="summit">
+            <div class="preview gradient-b"></div>
+            <div class="description" hidden>
+              <h3>Summit</h3>
+              <p>Story‑driven sections with milestone timeline, outcome proof, and authority bar. Great for coaching and consulting.</p>
+              <p>Best for premium 1:1 offers and high‑ticket cohorts.</p>
+            </div>
+            <div class="template-actions">
+              <button class="btn btn-primary" data-action="toggle">View description</button>
+              <a class="btn btn-ghost" href="contact.html">Use this</a>
+            </div>
+          </article>
+
+          <article class="template-card card card-hover" data-template="nova">
+            <div class="preview gradient-c"></div>
+            <div class="description" hidden>
+              <h3>Nova</h3>
+              <p>Minimal layout with bold typography, feature grid, comparison table, and frictionless CTA band.</p>
+              <p>Best for SaaS trials and mobile apps.</p>
+            </div>
+            <div class="template-actions">
+              <button class="btn btn-primary" data-action="toggle">View description</button>
+              <a class="btn btn-ghost" href="contact.html">Use this</a>
+            </div>
+          </article>
+
+          <article class="template-card card card-hover" data-template="flux">
+            <div class="preview gradient-d"></div>
+            <div class="description" hidden>
+              <h3>Flux</h3>
+              <p>Scrolling narrative with sticky CTA, dynamic testimonials, and objection‑handling FAQ.</p>
+              <p>Best for agency services and case‑study driven offers.</p>
+            </div>
+            <div class="template-actions">
+              <button class="btn btn-primary" data-action="toggle">View description</button>
+              <a class="btn btn-ghost" href="contact.html">Use this</a>
+            </div>
+          </article>
+
+          <article class="template-card card card-hover" data-template="apex">
+            <div class="preview gradient-e"></div>
+            <div class="description" hidden>
+              <h3>Apex</h3>
+              <p>Authority‑first design: press logos, outcomes, and credibility hits up top; then a sharp offer section.</p>
+              <p>Best for personal brands and expert advisors.</p>
+            </div>
+            <div class="template-actions">
+              <button class="btn btn-primary" data-action="toggle">View description</button>
+              <a class="btn btn-ghost" href="contact.html">Use this</a>
+            </div>
+          </article>
+
+          <article class="template-card card card-hover" data-template="orbit">
+            <div class="preview gradient-f"></div>
+            <div class="description" hidden>
+              <h3>Orbit</h3>
+              <p>Feature carousel, integration badges, and conversion‑focused pricing with toggle for monthly/once‑off.</p>
+              <p>Best for tools and bundled service packages.</p>
+            </div>
+            <div class="template-actions">
+              <button class="btn btn-primary" data-action="toggle">View description</button>
+              <a class="btn btn-ghost" href="contact.html">Use this</a>
+            </div>
+          </article>
+
+          <article class="template-card card card-hover" data-template="pulse">
+            <div class="preview gradient-g"></div>
+            <div class="description" hidden>
+              <h3>Pulse</h3>
+              <p>Social proof heavy: review wall, before/after blocks, and trust‑building microcopy throughout.</p>
+              <p>Best for e‑commerce hero products and local services.</p>
+            </div>
+            <div class="template-actions">
+              <button class="btn btn-primary" data-action="toggle">View description</button>
+              <a class="btn btn-ghost" href="contact.html">Use this</a>
+            </div>
+          </article>
+
+          <article class="template-card card card-hover" data-template="halo">
+            <a class="preview" href="Templates/jew/landing.html" aria-label="Open JEW landing">
+              <img src="Templates/jew/assets/img/jew-landing-preview.svg" alt="JEW template preview" width="1200" height="700" loading="lazy" decoding="async" />
+            </a>
+            <div class="description" hidden>
+              <h3>JEW</h3>
+              <p>Soft pink gradients on a dark base, with friendly copy and simple product highlights.</p>
+              <p>Best for a one‑person women’s jewelry brand with low prices and decent quality.</p>
+            </div>
+            <div class="template-actions">
+              <button class="btn btn-primary" data-action="toggle">View description</button>
+              <a class="btn btn-ghost" href="Templates/jew/landing.html">Open</a>
+            </div>
+          </article>
+
+          <article class="template-card card card-hover" data-template="catalyst">
+            <div class="preview gradient-i"></div>
+            <div class="description" hidden>
+              <h3>Catalyst</h3>
+              <p>Lead capture focused: segmented CTAs, value ladder block, and conversion incentives.</p>
+              <p>Best for list‑building campaigns and launches.</p>
+            </div>
+            <div class="template-actions">
+              <button class="btn btn-primary" data-action="toggle">View description</button>
+              <a class="btn btn-ghost" href="contact.html">Use this</a>
+            </div>
+          </article>
+
+          <article class="template-card card card-hover" data-template="echo">
+            <div class="preview gradient-j"></div>
+            <div class="description" hidden>
+              <h3>Echo</h3>
+              <p>Long‑form persuasion with narrative blocks, outcome highlights, and conversion anchors.</p>
+              <p>Best for course sales and membership funnels.</p>
+            </div>
+            <div class="template-actions">
+              <button class="btn btn-primary" data-action="toggle">View description</button>
+              <a class="btn btn-ghost" href="contact.html">Use this</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="index.html"><span class="logo-frame" aria-hidden="true">KP</span>Kondwani<span>P</span></a>
+        <nav class="footer-nav">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a class="active" href="templates.html">Templates</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="social-links">
+          <!-- Replace '#' with your actual profiles -->
+          <!-- LinkedIn: insert your profile URL -->
+          <a href="https://www.linkedin.com/in/kondwani-phiri-407005347" aria-label="LinkedIn">in</a>
+          <!-- Whop: insert your Whop shop URL -->
+          <a href="#" aria-label="Whop">wh</a>
+          <!-- Facebook: insert your page URL -->
+          <a href="#" aria-label="Facebook">fb</a>
+        </div>
+      </div>
+      <div class="container legal">
+        <small>© <span id="year"></span> Kondwani P. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
+
+
