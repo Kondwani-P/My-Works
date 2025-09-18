@@ -47,4 +47,35 @@
     if (existingMessage) {
         existingMessage.remove();
     }
+
+    const messageEl = document.createElement('div');
+    messageEl.className = `contact-message ${type}`;
+    messageEl.textContent = message;
+
+    messageEl.style.cssText = `
+        padding: 12px 16px;
+        margin: 16px 0;
+        border-radius: 4px;
+        font-weight: 500;
+        ${type === 'success'
+            ? 'background: #d4edda; color: #155724; border: 1px solid #c3e6cb;'
+            : 'background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb'
+        }
+    `;
+
+    const form = document.querySelector('#contactForm');
+    form.parentNode.insertBefore(messageEl, form);
+
+    setTimeout(() => {
+        if (messageEl.parentNode) {
+            messageEl.remove();
+        }
+    }, 5000);
  }
+
+ document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.querySelector('#contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', submitContactForm);
+    }
+ });
