@@ -17,7 +17,7 @@
     submitBtn.disabled = true;
 
     try {
-        const response = await fetch('/api/contact', {
+        const response = await fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
